@@ -84,7 +84,8 @@ mainContainer.addEventListener('click', function (event) {
 
         // Change status in UI
         parentNode.querySelector('.status').innerText = 'Interview';
-        parentNode.querySelector('.status').classList.add('text-green-600');
+        // parentNode.querySelector('.status').classList.add('text-green-600');
+        parentNode.querySelector('.status').classList.add('border-green-200' , 'text-green-700');
         parentNode.querySelector('.status').classList.remove('text-red-600', 'text-gray-400');
 
         const jobInfo = { companyName, position, location, type, salary, description, status: 'Interview' };
