@@ -1,6 +1,6 @@
 let interviewList = [];
 let rejectedList = [];
-let currentStatus = 'all';
+let currentStatus = 'all-filter-btn';
 
 // DOM Elements
 let total = document.getElementById('total');
