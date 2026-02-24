@@ -13,10 +13,10 @@ const interviewFilterBtn = document.getElementById('interview-filter-btn');
 const rejectedFilterBtn = document.getElementById('rejected-filter-btn');
 
 const allCardSection = document.getElementById('allCards');
-const mainContainer = document.querySelector('body'); // Delegation from body or main
+const mainContainer = document.querySelector('body');
 const filterSection = document.getElementById('filtered-section');
 
-// Function to calculate counts (Dashboard and Tab Count)
+
 function calculateCount() {
     total.innerText = allCardSection.children.length;
     interviewCount.innerText = interviewList.length;
@@ -160,7 +160,7 @@ mainContainer.addEventListener('click', function (event) {
 
 // step 3  html file create
 function renderInterview() {
-    // make the filterSection empty every time
+
     filterSection.innerHTML = ''
 
     if (interviewList.length === 0) {
@@ -204,7 +204,7 @@ function renderInterview() {
 
 // step 3  html file create
 function renderRejected() {
-    // make the filterSection empty every time
+
     filterSection.innerHTML = ''
 
     if (rejectedList.length === 0) {
