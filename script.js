@@ -85,8 +85,8 @@ mainContainer.addEventListener('click', function (event) {
         // Change status in UI
         parentNode.querySelector('.status').innerText = 'Interview';
         // parentNode.querySelector('.status').classList.add('text-green-600');
-        parentNode.querySelector('.status').classList.add('border-green-200' , 'text-green-700');
-        parentNode.querySelector('.status').classList.remove('text-red-600', 'text-gray-400');
+        parentNode.querySelector('.status').classList.add('bg-green-100', 'text-green-700', 'border-green-400');
+        parentNode.querySelector('.status').classList.remove('invisible', 'bg-red-100', 'text-red-700', 'border-red-400');
 
         const jobInfo = { companyName, position, location, type, salary, description, status: 'Interview' };
 
@@ -117,8 +117,8 @@ mainContainer.addEventListener('click', function (event) {
         const description = parentNode.querySelector('.description').innerText;
 
         parentNode.querySelector('.status').innerText = 'Rejected';
-        parentNode.querySelector('.status').classList.add('text-red-600');
-        parentNode.querySelector('.status').classList.remove('text-green-600', 'text-gray-400');
+        parentNode.querySelector('.status').classList.add('bg-red-100', 'text-red-700', 'border-red-400');
+        parentNode.querySelector('.status').classList.remove('invisible', 'bg-green-100', 'text-green-700', 'border-green-400');
 
         const jobInfo = { companyName, position, location, type, salary, description, status: 'Rejected' };
 
@@ -165,7 +165,12 @@ function renderInterview() {
 
     if (interviewList.length === 0) {
         filterSection.innerHTML = `
-            <div class="bg-white p-10 text-center rounded shadow"><p class="text-3xl mb-2">📋</p><h3 class="text-lg font-bold">No Interview Jobs</h3><p class="text-gray-500">Keep applying!</p></div>
+            <div class="bg-white p-10 text-center flex flex-col justify-center items-center rounded shadow">
+            <img class="size-10" src="images/jobs.png" alt="">
+
+            <h3 class="text-lg font-bold">No Interview Jobs</h3>
+            <p class="text-gray-500">Keep applying!</p>
+            </div>
         `;
         return;
     }
@@ -184,14 +189,14 @@ function renderInterview() {
                 <p class="text-sm text-gray-500"><span class="location">${interview.location}</span> • <span class="type">${interview.type}</span></p>
                 <p class="salary text-sm font-bold mt-1">${interview.salary}</p>
             </div>
-            <p class="status text-sm font-semibold ${interview.status === 'Interview' ? 'text-green-600' : 'text-red-600'}">Status: ${interview.status}</p>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block bg-green-100 text-green-700 border-green-400"> ${interview.status}</p>
             <p class="description text-gray-600 text-sm">${interview.description}</p>
             <div class="flex gap-3 mt-4">
               <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
               <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
     `;
         filterSection.appendChild(div)
     }
@@ -204,7 +209,12 @@ function renderRejected() {
 
     if (rejectedList.length === 0) {
         filterSection.innerHTML = `
-            <div class="bg-white p-10 text-center rounded shadow"><p class="text-3xl mb-2">📋</p><h3 class="text-lg font-bold">No Rejected Jobs</h3><p class="text-gray-500">Keep applying!</p></div>
+            <div class="bg-white p-10 text-center flex flex-col justify-center items-center rounded shadow">
+            <img class="size-10" src="images/jobs.png" alt="">
+
+            <h3 class="text-lg font-bold">No Rejected Jobs</h3>
+            <p class="text-gray-500">Keep applying!</p>
+            </div>
         `;
         return;
     }
@@ -223,14 +233,14 @@ function renderRejected() {
                 <p class="text-sm text-gray-500"><span class="location">${reject.location}</span> • <span class="type">${reject.type}</span></p>
                 <p class="salary text-sm font-bold mt-1">${reject.salary}</p>
             </div>
-            <p class="status text-sm font-semibold ${reject.status === 'Interview' ? 'text-green-600' : 'text-red-600'}">Status: ${reject.status}</p>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block bg-red-100 text-red-700 border-red-400">${reject.status}</p>
             <p class="description text-gray-600 text-sm">${reject.description}</p>
             <div class="flex gap-3 mt-4">
               <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
               <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
     `;
         filterSection.appendChild(div)
     }

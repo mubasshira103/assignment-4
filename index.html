@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Job Application Tracker</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-gray-100">
@@ -40,19 +41,21 @@
       <div class="job-card bg-white p-6 rounded shadow flex justify-between">
         <div class="space-y-2">
             <div>
+
                 <h3 class="companyName text-xl font-bold">Google</h3>
                 <p class="position text-blue-600 font-medium">Frontend Developer</p>
                 <p class="text-sm text-gray-500"><span class="location">Remote</span> • <span class="type">Full-time</span></p>
                 <p class="salary text-sm font-bold mt-1">$120k - $150k</p>
             </div>
-            <p class="status text-sm font-semibold text-gray-400">Status: Pending</p>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block ">Not Applied</p>
             <p class="description text-gray-600 text-sm">Build the future of search engines.</p>
             <div class="flex gap-3 mt-4">
-              <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
-              <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
+              <button class="interview-btn  border-2 border-green-700 text-green-700 px-4 py-1 rounded">Interview</button>
+              <button class="rejected-btn  border-2 border-red-600 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <!-- <button class="btn-delete text-red-500 font-bold self-start">Delete</button> -->
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
       </div>
 
       <div class="job-card bg-white p-6 rounded shadow flex justify-between">
@@ -63,14 +66,14 @@
                 <p class="text-sm text-gray-500"><span class="location">Menlo Park</span> • <span class="type">On-site</span></p>
                 <p class="salary text-sm font-bold mt-1">$140k - $180k</p>
             </div>
-            <span class="status text-sm font-semibold border-solid border-green-200 text-gray-400 px-4 py-1 rounded"></span>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block ">Not Applied</p>
             <p class="description text-gray-600 text-sm">Designing social connection experiences.</p>
             <div class="flex gap-3 mt-4">
-              <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
-              <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
+              <button class="interview-btn  border-2 border-green-700 text-green-700 px-4 py-1 rounded">Interview</button>
+              <button class="rejected-btn  border-2 border-red-600 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
       </div>
 
       <div class="job-card bg-white p-6 rounded shadow flex justify-between">
@@ -81,14 +84,14 @@
                 <p class="text-sm text-gray-500"><span class="location">Los Gatos</span> • <span class="type">Remote</span></p>
                 <p class="salary text-sm font-bold mt-1">$150k - $200k</p>
             </div>
-            <p class="status text-sm font-semibold text-gray-400">Status: Pending</p>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block">Not Applied</p>
             <p class="description text-gray-600 text-sm">Create seamless streaming experiences for millions of users.</p>
             <div class="flex gap-3 mt-4">
-              <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
-              <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
+              <button class="interview-btn  border-2 border-green-700 text-green-700 px-4 py-1 rounded">Interview</button>
+              <button class="rejected-btn  border-2 border-red-600 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
       </div>
 
       <div class="job-card bg-white p-6 rounded shadow flex justify-between">
@@ -99,14 +102,14 @@
                 <p class="text-sm text-gray-500"><span class="location">Austin, TX</span> • <span class="type">On-site</span></p>
                 <p class="salary text-sm font-bold mt-1">$110k - $140k</p>
             </div>
-            <p class="status text-sm font-semibold text-gray-400">Status: Pending</p>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block">Not Applied</p>
             <p class="description text-gray-600 text-sm">Developing autonomous driving algorithms and vehicle control systems.</p>
             <div class="flex gap-3 mt-4">
-              <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
-              <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
+              <button class="interview-btn  border-2 border-green-700 text-green-700 px-4 py-1 rounded">Interview</button>
+              <button class="rejected-btn  border-2 border-red-600 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
       </div>
 
       <div class="job-card bg-white p-6 rounded shadow flex justify-between">
@@ -117,14 +120,14 @@
                 <p class="text-sm text-gray-500"><span class="location">Redmond, WA</span> • <span class="type">Hybrid</span></p>
                 <p class="salary text-sm font-bold mt-1">$135k - $170k</p>
             </div>
-            <p class="status text-sm font-semibold text-gray-400">Status: Pending</p>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block"> Not Applied</p>
             <p class="description text-gray-600 text-sm">Design and modernize enterprise cloud solutions for global clients.</p>
             <div class="flex gap-3 mt-4">
-              <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
-              <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
+              <button class="interview-btn  border-2 border-green-700 text-green-700 px-4 py-1 rounded">Interview</button>
+              <button class="rejected-btn  border-2 border-red-600 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
       </div>
 
       <div class="job-card bg-white p-6 rounded shadow flex justify-between">
@@ -135,14 +138,14 @@
                 <p class="text-sm text-gray-500"><span class="location">Stockholm</span> • <span class="type">Remote</span></p>
                 <p class="salary text-sm font-bold mt-1">$100k - $130k</p>
             </div>
-            <p class="status text-sm font-semibold text-gray-400">Status: Pending</p>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block">Not Applied</p>
             <p class="description text-gray-600 text-sm">Building the next generation of audio streaming applications.</p>
             <div class="flex gap-3 mt-4">
-              <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
-              <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
+              <button class="interview-btn  border-2 border-green-700 text-green-700 px-4 py-1 rounded">Interview</button>
+              <button class="rejected-btn  border-2 border-red-600 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
       </div>
 
       <div class="job-card bg-white p-6 rounded shadow flex justify-between">
@@ -153,14 +156,14 @@
                 <p class="text-sm text-gray-500"><span class="location">San Francisco</span> • <span class="type">Full-time</span></p>
                 <p class="salary text-sm font-bold mt-1">$145k - $190k</p>
             </div>
-            <p class="status text-sm font-semibold text-gray-400">Status: Pending</p>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block">Not Applied</p>
             <p class="description text-gray-600 text-sm">Analyze real-time trends and user engagement to improve the platform.</p>
             <div class="flex gap-3 mt-4">
-              <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
-              <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
+              <button class="interview-btn  border-2 border-green-700 text-green-700 px-4 py-1 rounded">Interview</button>
+              <button class="rejected-btn  border-2 border-red-600 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
       </div>
 
       <div class="job-card bg-white p-6 rounded shadow flex justify-between">
@@ -171,22 +174,17 @@
                 <p class="text-sm text-gray-500"><span class="location">Seattle</span> • <span class="type">Hybrid</span></p>
                 <p class="salary text-sm font-bold mt-1">$130k - $160k</p>
             </div>
-            <p class="status text-sm font-semibold text-gray-400">Status: Pending</p>
+            <p class="status text-sm font-semibold px-3 py-1 border inline-block">Not Applied</p>
             <p class="description text-gray-600 text-sm">Working on AWS cloud infrastructure.</p>
             <div class="flex gap-3 mt-4">
-              <button class="interview-btn bg-green-200 text-green-700 px-4 py-1 rounded">Interview</button>
-              <button class="rejected-btn bg-red-200 text-red-700 px-4 py-1 rounded">Rejected</button>
+              <button class="interview-btn  border-2 border-green-700 text-green-700 px-4 py-1 rounded">Interview</button>
+              <button class="rejected-btn  border-2 border-red-600 text-red-700 px-4 py-1 rounded">Rejected</button>
             </div>
         </div>
-        <button class="btn-delete text-red-500 font-bold self-start">Delete</button>
+        <button class=" font-bold self-start"><i class="fa-solid btn-delete fa-trash-can"></i></button>
       </div>
     </section>
   </div>
-
-
-  <a href="#_" class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none">
-    Button Text
-</a>
 
   <script src="script.js"></script>
 </body>
